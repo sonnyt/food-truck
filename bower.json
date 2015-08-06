@@ -1,0 +1,25 @@
+{
+  "name": "foodTruck",
+  "version": "0.0.1",
+  "homepage": "https://github.com/sonnyt/foodTruck",
+  "authors": [
+    "Sonny T. <mail@sonnyt.com>"
+  ],
+  "description": "Find nearest food trucks",
+  "main": "api/app.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "~1.2.1",
+    "requirejs": "~2.1.20",
+    "font-awesome": "~4.4.0",
+    "jquery": "~2.1.4",
+    "text": "~2.0.14"
+  }
+}

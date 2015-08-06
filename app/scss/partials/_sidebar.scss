@@ -1,0 +1,63 @@
+/**
+ * Sidebar container
+ */
+.container >.sidebar {
+    float: left;
+    width: 35%;
+    height: 100%;
+    overflow: auto;
+
+    .filter {
+        font-size: 13px;
+        padding-bottom: 15px;
+        display: none;
+    }
+
+    ul#truck-list {
+        list-style: none;
+        padding: 0;
+        margin: 0 -20px;
+
+        >li {
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            margin-top: -1px;
+            padding: 10px 20px 14px;
+
+            &:not(.empty):hover {
+                background-color: #FBFAFA;
+            }
+
+            div.address {
+                margin-bottom: 5px;
+                font-size: 12px;
+            }
+
+            div.tags {
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+
+                    li {
+                        display: inline-block;
+                        text-transform: lowercase;
+                        font-size: 12px;
+                        margin: 0 3px 0 0;
+                        background-color: #eee;
+                        border-radius: 100px;
+                        padding: 6px 11px;
+                        line-height: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    #loader {
+        text-align: center;
+        padding: 10px 0;
+        color: #888;
+        display: none;
+    }
+}

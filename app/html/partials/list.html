@@ -1,0 +1,13 @@
+<div>
+    <strong><%= truck.applicant %></strong>
+</div>
+<% if (truck.address) { %>
+<div class="address">
+    <i class="fa fa-map-marker"></i> <%= truck.address %>
+</div>
+<% } %>
+<div class="tags">
+    <ul>
+        <% _.each(truck.tags, function(tag) { %><li><%= tag %></li><% }); %>
+    </ul>
+</div>
