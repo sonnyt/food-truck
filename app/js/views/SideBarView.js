@@ -8,7 +8,7 @@ define([
     'views/SearchBarView',
     'views/ListView',
 ],
-function SidebarView($, _, Backbone, sidebarHTML, SearchBarView, ListView) {
+function SideBarView($, _, Backbone, sidebarHTML, SearchBarView, ListView) {
     var SideBar = {};
 
     /**
