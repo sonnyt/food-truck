@@ -111,7 +111,7 @@ function AppView($, _, Backbone, TrucksCollection, MapView, SideBarView) {
     App.filter = function(e) {
         var categories = $('.check:checked').map(function() {
                 return this.value;
-            }).get();
+            });
 
         var data = this.trucks.byCategory(categories);
 
