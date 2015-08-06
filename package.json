@@ -6,6 +6,9 @@
     "node": "0.10.x"
   },
   "main": "api/app.js",
+  "scripts": {
+    "start": "node api/app.js"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/sonnyt/foodTruck.git"
