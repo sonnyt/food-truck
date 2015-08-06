@@ -43,8 +43,6 @@ define([
                 while(i--) {
                     if (truck.attributes.tags.indexOf(categories[i]) > -1) {
                         return true;
-
-                        break;
                     }
                 }
             });
