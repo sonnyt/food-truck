@@ -2,10 +2,13 @@
  * Sidebar container
  */
 .container >.sidebar {
-    float: left;
-    width: 35%;
-    height: 100%;
-    overflow: auto;
+
+    @media (min-width: 768px) {
+        float: left;
+        width: 35%;
+        height: 100%;
+        overflow: auto;
+    }
 
     .filter {
         font-size: 13px;
