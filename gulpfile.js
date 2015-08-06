@@ -88,6 +88,6 @@ gulp.task('watch', function() {
 
 gulp.task('compile', ['javascript:src', 'javascript:libs', 'sass', 'fonts', 'html']);
 
-gulp.task('default', ['clean'], function() {
+gulp.task('build', ['clean'], function() {
     gulp.start('compile');
 });
