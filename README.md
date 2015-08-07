@@ -21,4 +21,5 @@ Single page web application is built using:
 
 After successfully finishing the build process. Gulp creates and stores all of the compiled and uglified files inside of a newly created "public" directory. 
 
-### Notes
+## Notes
+
