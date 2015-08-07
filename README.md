@@ -15,6 +15,6 @@ Single page web application built using:
 - Gulp.js
 
 ### Installation
-1. Install NPM packages 
-    npm install
-2. 
+1. Install NPM packages `npm install`
+2. Install Bower components `bower install`
+3. Build the application `gulp build`
