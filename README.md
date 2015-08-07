@@ -1,1 +1,20 @@
-# foodTruck
+# Food Trucks In San Francsico
+
+Food trucks found near a specific location in San Francisco. Data provided by [DataSF](http://www.datasf.org/): [Food
+Trucks](https://data.sfgov.org/Permitting/Mobile-Food-Facility-Permit/rqzj-sfat)
+
+**Demo**
+
+### Tech Stack
+
+Single page web application built using:
+- Node.js
+- Backbone.js
+- Jquery
+- SCSS
+- Gulp.js
+
+### Installation
+1. Install NPM packages 
+    npm install
+2. 
