@@ -11,7 +11,7 @@ Single page web application is built using:
 - Node.js
 - Backbone.js
 - Jquery
-- SCSS
+- SASS
 - Gulp.js
 
 ## Installation
