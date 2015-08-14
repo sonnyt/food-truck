@@ -130,9 +130,9 @@ function MapView($, _, Backbone) {
      * @return {Object}
      */
     Map.infoWindow = function(truck) {
-        var content = '<p><strong>' + truck.applicant + '</strong> <br>'
-                    + truck.address + '<br> SAN FRANCISCO, CA</p>'
-                    + '<p><em>' + truck.tags.join(', ').toLowerCase() + '</em></p>';
+        var content = '<p><strong>' + truck.applicant + '</strong> <br>'+
+                      truck.address + '<br> SAN FRANCISCO, CA</p>'+
+                      '<p style="text-transform: capitalize;"><em>' + truck.tags.join(', ').toLowerCase() + '.</em></p>';
 
         return new google.maps.InfoWindow({ content: content });
     };
