@@ -3,7 +3,7 @@
 Food trucks found near a specific location in San Francisco. Data provided by [DataSF](http://www.datasf.org/): [Food
 Trucks](https://data.sfgov.org/Permitting/Mobile-Food-Facility-Permit/rqzj-sfat)
 
-**Demo**
+**[Demo](https://stormy-citadel-3378.herokuapp.com/)**
 
 ## Tech Stack
 
