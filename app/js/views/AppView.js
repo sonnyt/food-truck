@@ -87,6 +87,7 @@ function AppView($, _, Backbone, TrucksCollection, MapView, SideBarView) {
             data: $.param(location)
         }).then(function (data) {
             if (data.length) {
+                // for each data set DOM
                 data.forEach(function(truck) {
                     this.map.addMarker(truck);
 
@@ -96,6 +97,7 @@ function AppView($, _, Backbone, TrucksCollection, MapView, SideBarView) {
                 this.sidebar.showFilters();
                 this.map.centerMap();
             } else {
+                // no data
                 this.sidebar.hideFilters();
                 this.sidebar.noResult();
             }

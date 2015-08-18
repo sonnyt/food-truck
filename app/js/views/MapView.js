@@ -121,6 +121,7 @@ function MapView($, _, Backbone) {
             this.markers[i].setMap(null);
         }
 
+        // set markers to an empty array
         this.markers = [];
     };
 
@@ -134,6 +135,7 @@ function MapView($, _, Backbone) {
                       truck.address + '<br> SAN FRANCISCO, CA</p>'+
                       '<p style="text-transform: capitalize;"><em>' + truck.tags.join(', ').toLowerCase() + '.</em></p>';
 
+        // return new info window
         return new google.maps.InfoWindow({ content: content });
     };
 
