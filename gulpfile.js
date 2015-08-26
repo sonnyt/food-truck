@@ -6,10 +6,11 @@ var jshint = require('gulp-jshint');
 var jscs = require('gulp-jscs');
 var watch = require('gulp-watch');
 var del = require('del');
+var Server = require('karma').Server;
 
 var paths = {
     scripts: {
-        src: './app/js/**/*.js',
+        src: './app/js/src/**/*.js',
         libs: [
             './bower_components/backbone/backbone-min.js',
             './bower_components/requirejs/require.js',
@@ -38,7 +39,7 @@ gulp.task('clean', function(cb) {
 
 gulp.task('javascript:src', function() {
     return gulp.src(paths.scripts.src)
-            .pipe(gulp.dest('./public/js'));
+            .pipe(gulp.dest('./public/js/src'));
 });
 
 gulp.task('javascript:libs', function() {
@@ -60,6 +61,13 @@ gulp.task('fonts', function() {
 gulp.task('html', function() {
     return gulp.src(paths.html)
             .pipe(gulp.dest('./public/html'));
+});
+
+gulp.task('test', function (done) {
+    new Server({
+        configFile: __dirname + '/karma.conf.js',
+        singleRun: true
+    }, done).start();
 });
 
 gulp.task('watch', function() {

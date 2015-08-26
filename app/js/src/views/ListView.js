@@ -4,7 +4,7 @@ define([
     'jquery',
     'underscore',
     'backbone',
-    'text!../../html/partials/list.html'
+    'text!../../../html/partials/list.html'
 ],
 function ListView($, _, Backbone, listHTML) {
     var List = {};

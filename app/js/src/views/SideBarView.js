@@ -4,7 +4,7 @@ define([
     'jquery',
     'underscore',
     'backbone',
-    'text!../../html/partials/sidebar.html',
+    'text!../../../html/partials/sidebar.html',
     'views/SearchBarView',
     'views/ListView',
 ],
